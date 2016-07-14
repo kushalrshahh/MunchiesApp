@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/aboutUS">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/appIcon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Munchies"
+        android:id="@+id/appName"
+        android:layout_below="@+id/appIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Version : beta"
+        android:id="@+id/appVersion"
+        android:layout_below="@+id/appName"
+        android:layout_alignLeft="@+id/appName"
+        android:layout_alignStart="@+id/appName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Designed &amp; Created By:"
+        android:id="@+id/design"
+        android:layout_below="@+id/appVersion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Shwet Maroo"
+        android:id="@+id/shwet"
+        android:layout_below="@+id/design"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Prachi Bhopatkar"
+        android:id="@+id/prachi"
+        android:layout_below="@+id/shwet"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mansi Patel"
+        android:id="@+id/mansi"
+        android:layout_below="@+id/prachi"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Kushal Shah"
+        android:id="@+id/kushal"
+        android:layout_below="@+id/mansi"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate Us"
+        android:id="@+id/ratings"
+        android:layout_below="@+id/kushal"
+        android:layout_alignLeft="@+id/design"
+        android:layout_alignStart="@+id/design"
+        android:layout_marginTop="21dp"
+        android:background="#fa3681"
+        android:onClick="loveme"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback"
+        android:id="@+id/feedback"
+        android:background="#b1f724"
+        android:layout_alignTop="@+id/ratings"
+        android:layout_alignRight="@+id/design"
+        android:layout_alignEnd="@+id/design"
+        android:onClick="feedback"/>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 'Google Inc.:Google APIs:22'
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "munchies.example.com.munchies"
+        minSdkVersion 22
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.1'
+  //  compile 'com.google.android.gms:play-services:7.8.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+    //compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.google.code.gson:gson:2.1'
+    compile 'com.google.guava:guava:11.0.1'
+
+    compile 'com.google.protobuf:protobuf-java:2.2.0'
+    compile "com.android.support:cardview-v7:23.0.1"
+    compile 'com.google.android.gms:play-services-location:8.1.0'
+    compile files('libs/google-api-client-1.10.3-beta.jar')
+    compile files('libs/google-api-client-android2-1.10.3-beta.jar')
+    compile files('libs/google-http-client-1.10.3-beta.jar')
+    compile files('libs/google-http-client-android2-1.10.3-beta.jar')
+    compile files('libs/google-oauth-client-1.10.1-beta.jar')
+    compile files('libs/jackson-core-asl-1.9.4.jar')
+    compile files('libs/jsr305-1.3.9.jar')
+    compile files('libs/mysql-connector-java-5.1.33.jar')
+    compile files('libs/commons-codec-1.4.jar')
+    compile files('libs/scribe.jar')
+    compile files('libs/aws-android-sdk-s3-2.2.9.jar')
+    compile files('libs/aws-android-sdk-cognito-2.2.9.jar')
+    compile files('libs/aws-android-sdk-core-2.2.9.jar')
+
+}

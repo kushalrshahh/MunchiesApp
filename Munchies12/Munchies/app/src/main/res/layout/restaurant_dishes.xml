@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="1"
+    >
+
+
+    <TextView
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:text="Top 3 Dishes"
+        android:id="@+id/top3dishes"
+        android:layout_gravity="center"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        >
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="dish1"
+        android:gravity="center"
+        android:id="@+id/dish1"
+        android:background="#40fff3" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="rating1"
+        android:gravity="center"
+        android:id="@+id/rating1"
+        android:layout_gravity="center_horizontal"
+        android:background="#40fff3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="dish2"
+        android:gravity="center"
+        android:id="@+id/dish2"
+        android:background="#40fff3" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="rating2"
+        android:id="@+id/rating2"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="#40fff3" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="dish3"
+        android:gravity="center"
+        android:id="@+id/dish3"
+        android:background="#40fff3" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="rating3"
+        android:id="@+id/rating3"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:background="#40fff3" />
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="munchies.example.com.munchies" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" /-->
+
+        <activity android:name=".YelpSearchListActivity" />
+        <activity
+            android:name=".MainActivityfb"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="Munchies" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="bhn" >
+        </activity>
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB4n9VaWUrGq51Y_hB_O2dRDLEBBU0AFMY"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".PlaceCompleteMainActivity"
+            android:label="PlaceCompleteMainActivity" >
+
+        </activity>
+        <activity
+            android:name=".AndroidFoursquare"
+            android:label=".AndroidFoursquare" >
+
+        </activity>
+        <!-- SinglePlaceActivity -->
+        <activity android:name=".SinglePlaceActivity" android:label="Place Details">
+        </activity>
+
+
+    <!-- SinglePlaceActivity -->
+    <activity android:name=".AboutUs" android:label="About Us">
+    </activity>
+
+        <!-- PlacesMapActivity -->
+        <activity android:name=".PlacesMapActivity" android:label="Near Places Map View">
+        </activity>
+        <activity
+            android:name=".restaurantMain"
+            android:label="zzxv" >
+        </activity>
+        <activity
+            android:name=".RestoDishes"
+            android:label="Dishes" >
+        </activity>
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+    </application>
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Access Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>

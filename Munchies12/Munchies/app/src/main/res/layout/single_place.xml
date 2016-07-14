@@ -1,0 +1,113 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dip"
+    android:id="@+id/single_place">
+    
+    <!-- Name Label -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#417cff"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+    
+    <!--  Name Value -->
+
+    
+    <!-- Address Label -->
+    <TextView
+        android:text="Address:"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="5dip"
+        android:textStyle="bold"
+        />
+    
+    <!--  Address Value -->
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <!-- Phone Number Label -->
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"/>
+    
+    
+    <!-- Location Value -->
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="5dip"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Recommend"
+        android:id="@+id/recommend"
+        android:onClick="Recommend_Restaurant"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Yelp Detail"
+            android:id="@+id/YelpAPI"
+            android:layout_gravity="center_horizontal"
+            android:onClick="Yelp_Details"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Directions"
+        android:id="@+id/rest_directionn"
+        android:onClick="Get_Direction"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/menu"
+        android:layout_gravity="right"
+        android:onClick="Restaurant_Menu"/>
+</LinearLayout>
+</LinearLayout>
+
+<ListView
+android:id="@+id/navList"
+android:layout_width="200dp"
+android:layout_height="match_parent"
+android:layout_gravity="left|start"
+android:background="#ffeeeeee"/>
+
+    </android.support.v4.widget.DrawerLayout>
