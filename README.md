@@ -20,7 +20,7 @@ tone of the dish specific restaurant comment. This class is being called in munc
 
 program.
 
-#Hive Quesries and Python UDF folder:
+#Hive Queries and Python UDF folder:
 
 this folder contains hive queries and Python scripts/UDFs that we wrote for initial data filtration,
 
